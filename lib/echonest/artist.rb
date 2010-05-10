@@ -68,7 +68,5 @@ module EchoNest
     service :similar
     service :urls, :singular => true, :provides => [:mb_url, :official_url, :myspace_url, :wikipedia_url,  :amazon_url, :itunes_url]
     service :video
-    
- 
   end
 end

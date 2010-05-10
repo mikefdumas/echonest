@@ -12,14 +12,16 @@ module EchoNest
     end
     
     def fetch
-      open(uri).read
-    end
+			puts uri
+      puts s = open(uri).read
+			s
+		end
     
     private
     
     def query_string(options)
-      options.keys.map { |key| "#{key.to_s}=#{URI.encode(options[key].to_s)}" }.join('&')
-    end
+     options.keys.map { |key| "#{key.to_s}=#{URI.encode(options[key].to_s)}" }.join('&')
+		end
   
   end
 

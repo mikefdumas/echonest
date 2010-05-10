@@ -40,6 +40,8 @@ Gem::Specification.new do |s|
     "lib/echonest/xml/audio_doc.rb",
     "lib/echonest/xml/audio_result.rb",
     "lib/echonest/xml/audio_results.rb",
+    "lib/echonest/xml/biography_doc.rb",
+    "lib/echonest/xml/biographies_results.rb",
     "lib/echonest/xml/blogs_doc.rb",
     "lib/echonest/xml/blogs_result.rb",
     "lib/echonest/xml/blogs_results.rb",

@@ -6,7 +6,7 @@ module EchoNest
       
       tag :response
       
-      has_one :artist, ArtistDoc
+      #has_one :artist, ArtistDoc
       has_one :results, ReviewsResults
       
     end

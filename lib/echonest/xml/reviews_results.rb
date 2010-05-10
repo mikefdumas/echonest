@@ -4,14 +4,13 @@ module EchoNest
     class ReviewsResults
       include HappyMapper
      
-      tag :results
+      tag :reviews
      
       attribute :found, String
       attribute :shown, String    
       attribute :start, String
       
       has_many :docs, ReviewsDoc    
-    
     end
   end
 end
