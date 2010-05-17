@@ -13,8 +13,12 @@ module EchoNest
     
     def fetch
 			puts uri
-      puts s = open(uri).read
-			s
+      puts result = open(uri).read
+
+
+			File.open(EchoNest.log_path + uri.gsub('/', '\\'), 'w') { |f| f.puts result }
+
+			result
 		end
     
     private

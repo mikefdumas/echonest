@@ -11,7 +11,23 @@ module EchoNest
    
    def self.api_key
     @api_key
-   end  
+   end
+
+	 def self.debug=(debug=false)
+		 @debug = debug
+	 end
+
+	 def self.debug
+		 @debug
+	 end
+
+	 def self.log_path=(log_path='')
+			@log_path = log_path
+	 end
+
+	 def self.log_path
+		 @log_path
+	 end
 
 end
 
